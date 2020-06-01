@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css+checkbox</title>
+    <style>
+        .checkbox input:checked+label{
+            background: url("1.png") no-repeat left center;
+            background-size: 18px 18px;
+        }
+        .checkbox input+label{
+            background: url("0.png") no-repeat left center;
+            background-size: 18px 18px;
+            padding-left: 20px;
+        }
+        label{
+            cursor: default;
+        }
+    </style>
+</head>
+<body>
+    <div class="checkbox">
+        <input type="checkbox" id="handsome" style="display: none">
+        <label for="handsome">我很帅</label>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline-block</title>
+    <style>
+        .container{
+            margin: 0 auto;
+            max-width: 800px;
+            display: flex;
+            border: 1px solid black;
+        }
+        .left{
+            background: red;
+            display: flex;
+            width: 200px;
+            margin: 5px;
+        }
+
+        @media (max-width: 640px) {
+            .left{
+                display: none;
+            }
+        }
+        .right{
+            background: blue;
+            display: flex;
+            flex: 1;
+        }
+    </style>
+</head>
+</head>
+<body>
+<div class="container">
+    <div class="left">
+        DOCTYPE 定义文档类型。 a 定义锚。 abbr 定义缩写。 acronym 定义只取首字母的缩写。 address 定义文档作者或拥有者的联系信息。 applet 不赞成使用。定义嵌入的 applet。
+    </div>
+    <div class="right">
+        DOCTYPE 定义文档类型。 a 定义锚。 abbr 定义缩写。 acronym 定义只取首字母的缩写。 address 定义文档作者或拥有者的联系信息。 applet 不赞成使用。定义嵌入的 applet。 area 定义图像映射内部的区域。 article 定义文章。 aside 定义页面内容之外的内容。
+    </div>
+
+</div>
+
+</body>
+</html>
