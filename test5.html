@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>background</title>
+    <style>
+        .c1{
+            height: 500px;
+            background: red url("./test.jpeg") repeat-y;/* repeat图片平铺 */
+            /*background: hsl(250, 100%, 80%);*/
+        }
+        .c2{
+            height: 90px;
+            /*background: -webkit-linear-gradient(left,red,green);  红到绿的渐变 */
+            /*background: linear-gradient(to right,red,green);*/
+            /*background: linear-gradient(45deg,red,green);*/
+            /*background: linear-gradient(135deg,red 0,green 50%,blue 100%);*/
+            background: linear-gradient(135deg,transparent 0,transparent 49.5%,green 49.5%,green 50%);
+            background-size: 30px 30px;
+        }
+        .c3{
+            height: 500px;
+            background: red url("./test") repeat-y;/* repeat图片平铺 */
+            /*background: hsl(250, 100%, 80%);*/
+        }
+    </style>
+</head>
+<body>
+    <div class="c1"></div>
+    <div class="c2"></div>
+    <div class="c3"></div>
+</body>
+</html>
