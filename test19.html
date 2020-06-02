@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>keyframe</title>
+    <style>
+        .container{
+            width: 100px;
+            height: 100px;
+            background: red;
+            animation: run 1s ease;
+            animation-direction: reverse;
+            animation-iteration-count: 2;
+            /*animation-play-state: paused;*/
+            animation-fill-mode: backwards;
+        }
+        @keyframes run {
+            0%{
+                width: 100px;
+            }
+            100%{
+                width: 800px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+</body>
+</html>
